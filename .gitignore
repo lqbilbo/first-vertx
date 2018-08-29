@@ -1,0 +1,13 @@
+#IDEA
+**/.idea/
+**/.vertx/
+**/gradle/
+**/*.iml
+
+#Compile folder
+**/.gradle/
+**/build/
+**/out/
+
+#log output
+**/logs/
