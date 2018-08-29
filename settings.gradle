@@ -1,3 +1,4 @@
 rootProject.name = 'first-vertx'
 include 'sofa-common'
+include 'sofa-core'
 
