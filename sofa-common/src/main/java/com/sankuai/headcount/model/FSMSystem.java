@@ -8,6 +8,16 @@ import com.sankuai.headcount.model.valObj.SystemId;
  */
 public abstract class FSMSystem {
 
+    private HCEntity hcEntity;
+
+    FSMSystem(HCEntity hcEntity) {
+        this.hcEntity = hcEntity;
+    }
+
+    public HCEntity getCurrentHc() {
+        return hcEntity;
+    }
+
     /**
      * 转移
      */

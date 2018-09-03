@@ -19,6 +19,10 @@ public class HCEntity {
     @Getter
     private FSMState.Phase state;
     @Getter
+    private Department department;
+    @Getter
+    private Date effTime;
+    @Getter
     private Date createTime;
     @Getter
     private Date modifyTime;
