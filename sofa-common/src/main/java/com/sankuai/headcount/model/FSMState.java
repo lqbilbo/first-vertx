@@ -21,12 +21,7 @@ public interface FSMState {
     /**
      * 进入该状态的逻辑，由子类实现(A)
      */
-    void onEnter();
-
-    /**
-     * 退出该状态的逻辑，由子类实现(A)
-     */
-    void onExit();
+    void onStay();
 
     enum Phase {
 
@@ -52,6 +47,13 @@ public interface FSMState {
 
         public boolean isCurrent() {
           return current;
+        }
+
+        public boolean isChanged(FSMState state) {
+            if (!state.equals(this)) {
+              return true;
+            }
+            return false;
         }
     }
 

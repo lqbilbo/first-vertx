@@ -5,9 +5,8 @@ package com.sankuai.headcount.model;
  * @author luoqi04
  */
 public class FSMController extends FSMSystem {
-  @Override
-  protected void FSMInit() {
+    @Override
+    protected void FSMInit() {
 
-
-  }
+    }
 }
