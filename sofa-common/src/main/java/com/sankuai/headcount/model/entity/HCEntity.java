@@ -15,7 +15,7 @@ public class HCEntity {
     @Getter
     private Long identifier;
     @Getter
-    private Long hcNum;
+    private Long hcNumber;
     @Getter
     private FSMState.Phase state;
     @Getter

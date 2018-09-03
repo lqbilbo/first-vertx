@@ -11,7 +11,7 @@ public abstract class FSMSystem {
     /**
      * 转移
      */
-    protected void transmit() {
+    public void transmit() {
 
     }
 
