@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 /**
  * @author luoqi04
  */
-public class TransmitEvent implements FSMState {
+public class UpdateEvent implements FSMState {
 
     @Resource
     private FSMController controller;
@@ -22,7 +22,7 @@ public class TransmitEvent implements FSMState {
     @Override
     public boolean enterCond() {
         HCEntity hcEntity = controller.getCurrentHc();
-        if (validateService.ifDepartmentChanged(hcEntity)) {
+        if(validateService.ifKeyFieldsChanged(hcEntity)) {
             return true;
         }
         return false;
@@ -31,7 +31,7 @@ public class TransmitEvent implements FSMState {
     @Override
     public boolean exitCond() {
         if (phase.isChanged(this)) {
-          return true;
+            return true;
         }
         return false;
     }
@@ -40,7 +40,6 @@ public class TransmitEvent implements FSMState {
     public void onStay() {
         //some CRUDs.
         //state changed & write log
-        controller.transmit();
     }
 
 }

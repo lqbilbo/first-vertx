@@ -10,16 +10,16 @@ import java.util.Date;
  * @author luoqi04
  */
 @Data
-public class HCEntity {
+public class HCEntitySnapshot {
 
     @Getter
-    private Long identifier;
+    private Long id;
     @Getter
     private Long hcNumber;
     @Getter
-    private FSMState.Phase state;
+    private Integer state;
     @Getter
-    private Department department;
+    private Integer departId;
     @Getter
     private Date effTime;
     @Getter
