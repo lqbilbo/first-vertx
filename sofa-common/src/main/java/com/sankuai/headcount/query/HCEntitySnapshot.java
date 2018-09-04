@@ -1,6 +1,5 @@
-package com.sankuai.headcount.model.entity;
+package com.sankuai.headcount.query;
 
-import com.sankuai.headcount.model.FSMState;
 import lombok.Data;
 import lombok.Getter;
 
