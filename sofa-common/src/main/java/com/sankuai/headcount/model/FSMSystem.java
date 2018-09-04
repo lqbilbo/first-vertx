@@ -1,5 +1,6 @@
 package com.sankuai.headcount.model;
 
+import com.sankuai.headcount.model.entity.HCEntity;
 import com.sankuai.headcount.model.valObj.SystemId;
 
 /**

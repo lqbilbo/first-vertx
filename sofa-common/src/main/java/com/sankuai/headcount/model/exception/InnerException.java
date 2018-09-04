@@ -1,5 +1,7 @@
 package com.sankuai.headcount.model.exception;
 
+import com.sankuai.headcount.model.enums.CauseEnum;
+
 public class InnerException extends Exception {
 
     private String message;

@@ -2,6 +2,8 @@ package com.sankuai.headcount.model.event;
 
 import com.sankuai.headcount.model.FSMController;
 import com.sankuai.headcount.model.FSMState;
+import com.sankuai.headcount.model.entity.HCEntity;
+import com.sankuai.headcount.service.ValidateService;
 
 import javax.annotation.Resource;
 
